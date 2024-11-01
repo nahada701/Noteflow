@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+.links{
+    text-decoration: none;
+    color: rgb(160, 82, 82);
+}
+.navbars{
+    background-color: #4A90E2;
+}
+
+.cont{
+    display: flex;
+    
+}
+.main{
+    width: 90%;
+}
+.add-btn{
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.logo{
+    font-size: 18px;
+}
+.inp{
+    outline-color: rgb(218, 218, 218);
+    border: none;
+    width: 90%;
+    border-radius: 20px;
+    border-color: rgb(244, 242, 242);
+}
+.magnifier{
+    margin-left: 20px;
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color:  rgb(0, 0, 0);
+
+}
+.nocolor{
+    display: none;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.clr{
+    
+    
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#note{
+    padding: 10px;
+    margin: 5px 0px 0px 0px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    outline: none;
+    color: white;
+}
+#addbutton{
+    outline: none;
+    font-size: 15px;
+    display: block;
+    margin-left: 80%;
+    margin-top: 5px;
+    border-radius: 20px; 
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+   
+}
+#blue{
+    background-color: rgb(73, 73, 244);
+}
+#purple{
+    background-color: rgb(157, 59, 248);
+}
+#pink{
+    background-color:rgb(211, 53, 232);
+}
+#orange{
+    background-color: rgb(244, 175, 47);
+}
+#green{
+    background-color:rgb(0 213 0);
+}
+.blue{
+    background-color:  rgb(73, 73, 244);
+}
+.purple{
+    background-color: rgb(157, 59, 248);
+}
+.pink{
+    background-color: rgb(211, 53, 232);
+}
+.orange{
+    background-color: rgb(244, 175, 47);
+}
+.green{
+    background-color: rgb(0 213 0);
+}
+#noted{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Wrap to the next row */
+    gap: 20px; /* Space between notes */
+    justify-content: start;
+    box-sizing: border-box;
+
+}
+.addednote{
+    position: relative;
+    box-sizing: border-box;
+    /* word-wrap: break-word; Breaks long words to prevent overflow */
+    overflow-wrap: break-word; /* Breaks long words on modern browsers */
+    white-space: pre-wrap;
+}
+.buttonss{
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.addednote:hover .buttonss{
+    display: block;
+    box-sizing: border-box;
+}
+
+.btnn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.note-cont{
+ 
+}
+.note-container{
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+}
+#notetitle{
+    padding: 10px;
+    margin: 6px 0px -7px 0px;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    outline: none;
+    color: white;
+
+}
+#notetitle::placeholder{
+color: white;
+font-size: 20px;
+}
+
+#note::placeholder{
+    color: white;
+  
+    }
+    
+    /* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+    padding-top: 30px;
+    border-right: 2px rgb(167, 167, 167) solid;
+    width: 10%;
+    min-height: 100vh;
+}
+
+.add-btn {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+}
+
+/* Main content */
+.main {
+    width: 90%;
+    padding: 20px;
+}
+
+.inp {
+    width: 80%;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+#noted {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.addednote {
+    width: 22.2%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        padding-top: 30px;
+        width: 100%;
+        min-height: 10vh;
+        border-right: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .inp {
+        width: 100%;
+    }
+
+    #noted {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .addednote {
+        width: 100%;
+    }
+    .colors{
+        flex-direction: row;
+        align-items: start;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .inp {
+        padding: 6px;
+        font-size: 14px;
+    }
+}

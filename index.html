@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script src="./script.js"></script>
+</head>
+<body >
+  <div class="cont">
+        <div class="sidebar text-center    bg-light">
+            <h5 class="text-center mt-0 logo ms-3 ms-md-0">Noteflow</h5>
+            <button class="add-btn mt-0 mt-md-5 me-auto me-md-0 ms-5 ms-md-0" onclick="addClass()">+</button>
+
+            <div class=" mt-1 mt-md-3  nocolor" id="colours">
+                <button class="text-center clr animate__animated" id="blue" onclick="colorClicked('blue')"> </button>
+                <button class="text-center clr animate__animated" id="purple" onclick="colorClicked('purple')"> </button>
+                <button class="text-center clr animate__animated" id="pink" onclick="colorClicked('pink')"> </button>
+                <button class="text-center clr animate__animated" id="orange" onclick="colorClicked('orange')"> </button>
+                <button class="text-center clr animate__animated" id="green" onclick="colorClicked('green')"> </button>
+
+
+            </div>
+        </div>
+        <div class="main   pb-3 ps-4" style="min-height: 100vh;background-color: #F7F9FC;">
+          
+            <h2 class="  "> Notes </h2>
+            
+            <div class=" text-center d-flex " > 
+            
+                <div class="content " id="notefield">
+                   
+                     
+                   <div class="note-container "><input type="text" id="notetitle" class=" d-none blue " placeholder="Title"><textarea name="" id="note" placeholder="Add note..." class="d-none blue" style="min-height: 150px;"></textarea></div>
+                    <button type="button" id="addbutton" onclick="addNote()" class=" d-none blue">+ </button>
+                </div>
+    
+              
+            </div>
+    
+            <div class="mt-5 ps-0  d-flex  " id="noted" >
+                
+                <!-- <div class=" text-light ps-2 py-4 rounded addednote" style=" background-color:blue; "><h5>Title</h5><p class="note-cont" >Tis is text </p>  <div class="buttonss">
+                    <button class="btnn " onclick="editNote(this)"><i class='bx bxs-edit-alt text-light'></i></button><button class="btnn"  onclick="deleteNote(this)"><i class='bx bx-trash text-danger'></i></button></div></div> -->
+             
+            </div>
+           
+        </div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+</html>
