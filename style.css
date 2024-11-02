@@ -31,6 +31,7 @@
 }
 .logo{
     font-size: 18px;
+    margin-bottom: 0;
 }
 .inp{
     outline-color: rgb(218, 218, 218);
@@ -79,7 +80,7 @@
     outline: none;
     font-size: 15px;
     display: block;
-    margin-left: 80%;
+    margin-left: 95%;
     margin-top: 5px;
     border-radius: 20px; 
     width: 40px;
@@ -135,30 +136,32 @@
     white-space: pre-wrap;
 }
 .buttonss{
-    display: none;
+    display: flex;
+    gap: 10px;
     position: absolute;
-    right: 5px;
+    right: 15px;
     bottom: 5px;
-}
-.addednote:hover .buttonss{
-    display: block;
-    box-sizing: border-box;
 }
 
 .btnn{
-    background-color: transparent;
-    border: none;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
     outline: none;
+    padding: 5%;
+    border: 1px solid black;
 }
 .note-cont{
  
 }
 .note-container{
+   
     margin-top: 34px;
     display: flex;
     flex-direction: column;
 }
 #notetitle{
+    font-size: 1.25rem;
     padding: 10px;
     margin: 6px 0px -7px 0px;
     border: none;
@@ -208,6 +211,9 @@ body, html {
     height: 40px;
     font-size: 24px;
 }
+.content{
+    
+}
 
 /* Main content */
 .main {
@@ -240,7 +246,7 @@ body, html {
     }
     
     .sidebar {
-        padding-top: 30px;
+        padding: 30px 0px;
         width: 100%;
         min-height: 10vh;
         border-right: 0px;

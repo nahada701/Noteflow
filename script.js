@@ -6,7 +6,7 @@
   let color= window.getComputedStyle(addbutton).backgroundColor
    if(!newNote==""){
     noted.innerHTML+= `<div class=" text-light ps-2 py-4 rounded addednote" style=" background-color: ${color}; ""><h5 class="titleofnote">${title}</h5><p class="note-cont" >${newNote} </p>  <div class="buttonss">
-                        <button class="btnn " onclick="editNote(this)"><i class='bx bxs-edit-alt text-light'></i></button><button class="btnn"  onclick="deleteNote(this)"><i class='bx bx-trash text-danger'></i></button></div></div>`
+                        <button class="btnn " onclick="editNote(this)"><i class='bx bxs-edit-alt text-light'></i></button></div></div>`
     note.value=""
     notetitle.value=""
    }
